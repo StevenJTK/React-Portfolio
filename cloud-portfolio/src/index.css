@@ -1,0 +1,339 @@
+:root {
+  body {
+    background-image: url("../public/images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1;
+    margin-bottom: 125px;
+  }
+
+  .navbar {
+    display: flex;
+    gap: 20px;
+    padding: 0px;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Helvetica', sans-serif;
+  }
+
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      font-size: 20px;
+    }
+  }
+
+  .navbar a {
+    color: whitesmoke;
+    text-decoration: none;
+  }
+
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(210, 180, 140);
+    color: rgb(255, 253, 208);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    height: 125px;
+    padding: 0px;
+  }
+
+  /*------------Home------------ */
+
+  .welcomebanner {
+    text-align: center;
+    margin-top: 65px;
+    padding: 0;
+    color: rgb(255, 253, 208);
+    font-size: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+
+  .p1 {
+    text-align: center;
+    color: rgb(255, 253, 208);
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: static;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+
+  .p2 {
+    text-align: center;
+    color: rgb(255, 253, 208);
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: static;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+
+  .p3 {
+    text-align: center;
+    color: rgb(255, 253, 208);
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: static;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+
+  .noti {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    background-color: #f0ad4e;
+    color: white;
+    border-radius: 5px;
+    display: none;
+    height: auto;
+  }
+
+  .noti.show {
+    display: block;
+  }
+
+  @media screen and (max-width: 768px) {
+    .welcomebanner {
+      font-size: 10vw;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .noti {
+      font-size: 2.5vw;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .p1 {
+      font-size: 10vw;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .p2 {
+      font-size: 8vw;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .p3 {
+      font-size: 8vw;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .noti {
+      width: 75px;
+      padding: 8px;
+      font-size: 12px;
+    }
+  }
+
+  /*------------About Me------------ */
+
+  .about-content {
+    text-align: center;
+    color: rgb(255, 253, 208);
+    font-size: 8vw;
+    margin: 0 auto;
+    padding: 5vh 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+
+  @media screen and (min-width: 769px) {
+    .about-content {
+      font-size: 100px;
+      padding: 50px 0;
+    }
+
+    .p1a, .p2a, .p3a {
+      font-size: 30px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .about-content {
+      font-size: 10vw;
+      padding: 5vh 0;
+    }
+
+    .p1a, .p2a, .p3a {
+      font-size: 1.2rem;
+    }
+  }
+
+  /*------------Contact------------ */
+
+  .contact-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #333333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    width: 400px;
+    color: rgb(255, 253, 208);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+
+  @media screen and (max-width: 768px) {
+    .contact-card {
+      width: 250px;
+      max-width: 90%;
+      margin: 50px auto;
+      padding: 15px;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  form label {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  form input, form textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  form input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+
+  form input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+  .contact-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgb(255, 253, 208);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+
+  .contact-text2 {
+    display: grid;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    color: rgb(245, 245, 220);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .githublogo {
+    width: 40px;
+  }
+
+  .linkedinlogo {
+    width: 40px;
+  }
+
+  .twitterlogo {
+    width: 35px;
+  }
+
+  .gmail-logo {
+    width: 35px;
+  }
+
+  /*------------Technology------------ */
+
+  .container, .container2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 20px;
+    width: 80%;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ffffff;
+    background-color: #333333;
+    border-radius: 25px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  @media screen and (max-width: 768px) {
+    .container, .container2 {
+      width: 90%;
+      padding: 10px;
+    }
+  }
+
+  .java {
+    color: rgb(245, 245, 220);
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  }
+
+  .sql {
+    color: rgb(245, 245, 220);
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    height: auto;
+    padding: 20px;
+  }
+
+  .html {
+    color: rgb(245, 245, 220);
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  }
+
+  .css {
+    color: rgb(245, 245, 220);
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    height: auto;
+    padding: 20px;
+  }
+
+  .javalogo {
+    width: 40px;
+  }
+
+  .html-logo {
+    width: 30px;
+  }
+
+  .css-logo {
+    width: 30px;
+  }
+}
